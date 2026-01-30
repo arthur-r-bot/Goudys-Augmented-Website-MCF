@@ -16,7 +16,7 @@ class CustomFooter extends HTMLElement {
                     <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                         <!-- Brand -->
                         <div class="col-span-1 md:col-span-1">
-                            <h3 class="font-serif text-2xl font-bold text-white mb-4">Goudy & Grace</h3>
+                            <h3 class="font-serif text-2xl font-bold text-white mb-4">Goudy's French Cuisine</h3>
                             <p class="text-sm leading-relaxed mb-4">Artisan charcuterie boards crafted with intention. Seasonal selections and year-round classics for every celebration.</p>
                             <div class="flex space-x-4">
                                 <a href="#" class="text-stone-400 hover:text-primary-400 transition-colors">
@@ -59,7 +59,7 @@ class CustomFooter extends HTMLElement {
                             <ul class="space-y-2 text-sm">
                                 <li class="flex items-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                                    hello@goudyandgrace.com
+                                    Goudy@FrenchCuisine.com
                                 </li>
                                 <li class="flex items-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
@@ -70,7 +70,7 @@ class CustomFooter extends HTMLElement {
                     </div>
                     
                     <div class="border-t border-stone-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
-                        <p>&copy; 2024 Goudy & Grace Charcuterie. All rights reserved.</p>
+                        <p>&copy; 2024 Goudy's French Cuisine. All rights reserved.</p>
                         <div class="flex space-x-6 mt-4 md:mt-0">
                             <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
                             <a href="#" class="hover:text-white transition-colors">Terms of Service</a>

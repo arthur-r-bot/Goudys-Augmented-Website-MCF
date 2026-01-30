@@ -48,7 +48,7 @@ class CustomNavbar extends HTMLElement {
                         <!-- Logo -->
                         <div class="flex-shrink-0 flex items-center">
                             <a href="index.html" class="font-serif text-2xl font-bold text-stone-900 tracking-tight">
-                                Goudy & <span class="text-primary-600">Grace</span>
+                                Goudy's <span class="text-primary-600">French Cuisine</span>
                             </a>
                         </div>
                         
