@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goudy French Cuisine | Artisan Charcuterie</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f',
+                        },
+                        secondary: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            200: '#a7f3d0',
+                            300: '#6ee7b7',
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased">
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+    <script src="product-card.js"></script>
+    <script src="newsletter.js"></script>
+
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="relative h-[85vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://static.photos/food/1200x630/42" alt="Charcuterie spread" class="w-full h-full object-cover opacity-90">
+            <div class="absolute inset-0 bg-gradient-to-b from-stone-900/60 via-stone-900/40 to-stone-50"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <span class="inline-block py-1 px-3 rounded-full bg-primary-500/20 text-primary-100 text-sm font-medium mb-4 backdrop-blur-sm border border-primary-400/30">
+                Est. 2012 • Artisan Crafted
+            </span>
+            <h1 class="font-serif text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Curated Boards for <br/>
+                <span class="text-primary-300">Every Occasion</span>
+            </h1>
+            <p class="text-lg md:text-xl text-stone-200 mb-8 max-w-2xl mx-auto font-light">
+                From intimate gatherings to grand celebrations, experience charcuterie elevated to an art form. Seasonal selections and year-round classics.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="seasonal.html" class="inline-flex items-center justify-center px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white rounded-full font-medium transition-all transform hover:scale-105 shadow-lg hover:shadow-primary-500/25">
+                    <i data-feather="calendar" class="w-5 h-5 mr-2"></i>
+                    Seasonal Collection
+                </a>
+                <a href="year-round.html" class="inline-flex items-center justify-center px-8 py-4 bg-white/10 hover:bg-white/20 text-white border border-white/30 rounded-full font-medium transition-all backdrop-blur-sm">
+                    <i data-feather="shopping-bag" class="w-5 h-5 mr-2"></i>
+                    Shop Classics
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Seasonal -->
+    <section class="py-20 px-4 md:px-8 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+            <div>
+                <h2 class="font-serif text-4xl font-bold text-stone-900 mb-2">Seasonal Favorites</h2>
+                <p class="text-stone-600">Limited time offerings, available for pre-order</p>
+            </div>
+            <a href="seasonal.html" class="mt-4 md:mt-0 text-primary-700 font-medium hover:text-primary-800 flex items-center group">
+                View All Seasonal 
+                <i data-feather="arrow-right" class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <custom-product-card 
+                name="The MICROFINANCE Special"
+                price="89"
+                image="https://static.photos/food/640x360/101"
+                tag="Pre-order"
+                tag-color="bg-secondary-600"
+                description="Aged cheddar, fig jam, spiced nuts, and cured meats with autumn fruits">
+            </custom-product-card>
+
+            <custom-product-card 
+                name="Winter Solstice Box"
+                price="120"
+                image="https://static.photos/food/640x360/102"
+                tag="Pre-order"
+                tag-color="bg-secondary-600"
+                description="Truffle cheese, hot honey, rosemary crackers, and premium salumi">
+            </custom-product-card>
+
+            <custom-product-card 
+                name="Holiday Grandeur"
+                price="165"
+                image="https://static.photos/food/640x360/103"
+                tag="Pre-order"
+                tag-color="bg-secondary-600"
+                description="Our largest seasonal offering with champagne pairing suggestions">
+            </custom-product-card>
+        </div>
+    </section>
+
+    <!-- Year Round Teaser -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="font-serif text-4xl font-bold text-stone-900 mb-2">Year-Round Classics</h2>
+                    <p class="text-stone-600">Always available, always exceptional</p>
+                </div>
+                <a href="year-round.html" class="mt-4 md:mt-0 text-primary-700 font-medium hover:text-primary-800 flex items-center group">
+                    View All Classics
+                    <i data-feather="arrow-right" class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <custom-product-card 
+                    name="The Essential"
+                    price="65"
+                    image="https://static.photos/food/640x360/201"
+                    description="Perfect for 2-4 people. Our signature selection of cheeses and meats">
+                </custom-product-card>
+
+                <custom-product-card 
+                    name="The Gathering"
+                    price="95"
+                    image="https://static.photos/food/640x360/202"
+                    description="Serves 6-8. Includes artisan breads and seasonal accompaniments">
+                </custom-product-card>
+
+                <custom-product-card 
+                    name="The Celebration"
+                    price="140"
+                    image="https://static.photos/food/640x360/203"
+                    description="Serves 10-12. Premium selections with wine pairing notes">
+                </custom-product-card>
+
+                <custom-product-card 
+                    name="DIY Kit"
+                    price="55"
+                    image="https://static.photos/food/640x360/204"
+                    description="All the ingredients, none of the prep. Build your own masterpiece">
+                </custom-product-card>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-20 px-4">
+        <custom-newsletter></custom-newsletter>
+    </section>
+
+    <!-- Feedback CTA -->
+    <section class="py-16 bg-stone-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <i data-feather="message-circle" class="w-12 h-12 text-primary-400 mx-auto mb-4"></i>
+            <h2 class="font-serif text-3xl font-bold mb-4">Help Us Serve You Better</h2>
+            <p class="text-stone-300 mb-8 max-w-xl mx-auto">
+                We're constantly improving our shipping and packaging. Share your experience and help us perfect every delivery.
+            </p>
+            <a href="feedback.html" class="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 rounded-full font-medium transition-colors">
+                Share Feedback
+                <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

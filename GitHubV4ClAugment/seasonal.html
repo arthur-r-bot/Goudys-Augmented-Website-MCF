@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasonal Products | Goudy's French Cuisine</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f',
+                        },
+                        secondary: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            200: '#a7f3d0',
+                            300: '#6ee7b7',
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased">
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+    <script src="product-card.js"></script>
+    <script src="newsletter.js"></script>
+
+    <custom-navbar></custom-navbar>
+
+    <!-- Header -->
+    <section class="bg-gradient-to-b from-primary-50 to-stone-50 py-16 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-secondary-100 text-secondary-800 text-sm font-medium mb-4">
+                Limited Time Only
+            </span>
+            <h1 class="font-serif text-5xl md:text-6xl font-bold text-stone-900 mb-4">Seasonal Collection</h1>
+            <p class="text-xl text-stone-600 max-w-2xl mx-auto">
+                Curated for the moment. Available exclusively for pre-order during their season. 
+                Secure your board before they're gone.
+            </p>
+        </div>
+    </section>
+
+    <!-- Current Season -->
+    <section class="py-16 px-4 max-w-7xl mx-auto">
+        <div class="flex items-center justify-between mb-8">
+            <h2 class="font-serif text-3xl font-bold text-stone-900">Winter 2024 Collection</h2>
+            <span class="text-sm text-stone-500">Shipping late December</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <custom-product-card 
+                name="Winter Solstice Grand"
+                price="145"
+                image="https://static.photos/food/640x360/301"
+                tag="Pre-order"
+                tag-color="bg-secondary-600"
+                description="Our winter flagship. Truffle pecorino, aged prosciutto, fig mostarda, and spiced walnuts. Serves 8-10.">
+            </custom-product-card>
+
+            <custom-product-card 
+                name="Cozy Night In"
+                price="75"
+                image="https://static.photos/food/640x360/302"
+                tag="Pre-order"
+                tag-color="bg-secondary-600"
+                description="Intimate board for two. Brie, champagne grapes, rosemary crackers, and dark chocolate. Perfect for date night.">
+            </custom-product-card>
+
+            <custom-product-card 
+                name="New Year's Eve Extravaganza"
+                price="195"
+                image="https://static.photos/food/640x360/303"
+                tag="Pre-order"
+                tag-color="bg-secondary-600"
+                description="The ultimate celebration board. Includes caviar, blinis, and champagne pairing guide. Serves 12-15.">
+            </custom-product-card>
+
+            <custom-product-card 
+                name="Fireside Box"
+                price="95"
+                image="https://static.photos/food/640x360/304"
+                tag="Pre-order"
+                tag-color="bg-secondary-600"
+                description="Smoked cheeses, charcuterie, and apple butter. Designed for fireplace gatherings. Serves 4-6.">
+            </custom-product-card>
+
+            <custom-product-card 
+                name="Holiday Brunch Board"
+                price="110"
+                image="https://static.photos/food/640x360/305"
+                tag="Pre-order"
+                tag-color="bg-secondary-600"
+                description="Morning-focused with soft cheeses, cured salmon, bagels, and preserves. Serves 6-8.">
+            </custom-product-card>
+
+            <custom-product-card 
+                name="Gift Box Mini"
+                price="45"
+                image="https://static.photos/food/640x360/306"
+                tag="Pre-order"
+                tag-color="bg-secondary-600"
+                description="Small but mighty. Perfect for gifting. Includes 3 cheeses, 2 meats, and accompaniments. Serves 2-3.">
+            </custom-product-card>
+        </div>
+    </section>
+
+    <!-- Coming Soon / Hype Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="inline-block py-1 px-3 rounded-full bg-primary-100 text-primary-800 text-sm font-medium mb-4">
+                    Coming Soon
+                </span>
+                <h2 class="font-serif text-4xl font-bold text-stone-900 mb-4">Spring 2025 Preview</h2>
+                <p class="text-stone-600 max-w-2xl mx-auto">
+                    Get excited for what's next. Join our mailing list to be the first to pre-order these upcoming collections.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 opacity-75 hover:opacity-100 transition-opacity">
+                <!-- Coming Soon Item 1 -->
+                <div class="relative group cursor-pointer">
+                    <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-stone-200 mb-4 relative">
+                        <img src="https://static.photos/nature/640x360/401" alt="Spring preview" class="w-full h-full object-cover filter blur-sm group-hover:blur-0 transition-all duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-all">
+                            <span class="bg-white/90 text-stone-800 px-4 py-2 rounded-full font-medium text-sm backdrop-blur-sm">Available March 2025</span>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-stone-900 mb-2">Spring Garden Board</h3>
+                    <p class="text-stone-600 text-sm">Fresh herbs, edible flowers, and light spring cheeses. Perfect for Easter brunches.</p>
+                </div>
+
+                <!-- Coming Soon Item 2 -->
+                <div class="relative group cursor-pointer">
+                    <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-stone-200 mb-4 relative">
+                        <img src="https://static.photos/nature/640x360/402" alt="Spring preview" class="w-full h-full object-cover filter blur-sm group-hover:blur-0 transition-all duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-all">
+                            <span class="bg-white/90 text-stone-800 px-4 py-2 rounded-full font-medium text-sm backdrop-blur-sm">Available April 2025</span>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-stone-900 mb-2">Picnic Season Box</h3>
+                    <p class="text-stone-600 text-sm">Travel-friendly packaging with durable cheeses and cured meats that hold up outdoors.</p>
+                </div>
+
+                <!-- Coming Soon Item 3 -->
+                <div class="relative group cursor-pointer">
+                    <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-stone-200 mb-4 relative">
+                        <img src="https://static.photos/nature/640x360/403" alt="Spring preview" class="w-full h-full object-cover filter blur-sm group-hover:blur-0 transition-all duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-all">
+                            <span class="bg-white/90 text-stone-800 px-4 py-2 rounded-full font-medium text-sm backdrop-blur-sm">Available May 2025</span>
+                        </div>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-stone-900 mb-2">Mother's Day Luxury</h3>
+                    <p class="text-stone-600 text-sm">Rosé pairing selections with floral honeys and delicate crackers. Limited edition.</p>
+                </div>
+            </div>
+
+            <!-- Early Access CTA -->
+            <div class="mt-12 text-center">
+                <div class="inline-flex items-center gap-2 bg-primary-50 border border-primary-200 rounded-full px-6 py-3 text-primary-800">
+                    <i data-feather="mail" class="w-4 h-4"></i>
+                    <span class="font-medium">Get notified when pre-orders open</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 px-4 max-w-4xl mx-auto">
+        <custom-newsletter></custom-newsletter>
+    </section>
+
+    <!-- Pre-order Info -->
+    <section class="py-16 bg-stone-100">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h3 class="font-serif text-2xl font-bold text-stone-900 mb-6">How Pre-orders Work</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mb-4 text-primary-600">
+                        <i data-feather="calendar" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-semibold text-stone-900 mb-2">1. Reserve</h4>
+                    <p class="text-sm text-stone-600">Place your pre-order by the deadline. No charge until we confirm shipping dates.</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mb-4 text-primary-600">
+                        <i data-feather="package" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-semibold text-stone-900 mb-2">2. We Prepare</h4>
+                    <p class="text-sm text-stone-600">We curate your board with the freshest seasonal ingredients at their peak.</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mb-4 text-primary-600">
+                        <i data-feather="truck" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="font-semibold text-stone-900 mb-2">3. Delivered Fresh</h4>
+                    <p class="text-sm text-stone-600">Shipped overnight in insulated packaging to arrive perfectly fresh.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
